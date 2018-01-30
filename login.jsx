@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 
 class LoginPage extends Component {
 	render() {
@@ -7,3 +8,6 @@ class LoginPage extends Component {
 		);
 	}
 }
+
+document.write('<div id="root"></div>');
+render(<LoginPage />, document.getElementById('root'));
