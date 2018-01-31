@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 class LoginPage extends Component {
+	const styles = {
+
+	};
+
+
 	render() {
 		return (
 		  <div className="login-wrapper">
