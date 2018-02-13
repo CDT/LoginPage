@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import './style.css';
 
 class LoginPage extends Component {
-	const styles = {
+	
+	componentDidMount() {
+		var openLoginRight = document.querySelector('.h1');
+		var loginWrapper = document.querySelector('.login-wrapper');
 
-	};
-
+		openLoginRight.addEventListener('click', function(){
+			loginWrapper.classList.toggle('open'); 
+		});
+	}
 
 	render() {
+
 		return (
 		  <div className="login-wrapper">
 		  
